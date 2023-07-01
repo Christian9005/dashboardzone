@@ -20,9 +20,9 @@ const CardPrincipal:FC<CardProps> = ({allData,mostDemandedZone,lessDemandedZone,
                 <Widget title="Zona menos demandada" data={lessDemandedZone} variant="secondary"/>
             </div>
             <div className="card-principal zones">
-                <Widget title="Zona 1" data={zone1} variant="zones"/>
-                <Widget title="Zona 2" data={zone2} variant="zones"/>
-                <Widget title="Zona 3" data={zone3} variant="zones"/>
+                <Widget title="Zona 1" data={zone1} variant="a"/>
+                <Widget title="Zona 2" data={zone2} variant="b"/>
+                <Widget title="Zona 3" data={zone3} variant="c"/>
                 <Widget title="Zona 4" data={zone4} variant="zones"/>
             </div>
         </>

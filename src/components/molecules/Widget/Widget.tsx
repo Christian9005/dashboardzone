@@ -3,7 +3,7 @@ import './Widget.scss';
 interface WidgetProps{
     title: string;
     data: number | string;
-    variant?: 'default' | 'primary' | 'secondary' | 'zones';
+    variant?: 'default' | 'primary' | 'secondary' | 'zones' | 'a' | 'b' | 'c';
 }
 const Widget:FC<WidgetProps> = ({title, data, variant = 'default'}) => {
     const widgetClassName = `widget ${variant}`
