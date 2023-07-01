@@ -1,0 +1,40 @@
+.widget {
+  color: black;
+  width: 250px;
+  height: 120px;
+  background-color: white;
+  border-radius: 4px;
+  padding: 16px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+
+  &.primary {
+    background-color: #2196f3;
+    color: #ffffff;
+  }
+
+  &.secondary {
+    background-color: #f50057;
+    color: #ffffff;
+  }
+
+  &.zones {
+    background-color: #4caf50;
+    color: #ffffff;
+  }
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &--tittle {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+
+  &--content {
+    font-size: 25px;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+}

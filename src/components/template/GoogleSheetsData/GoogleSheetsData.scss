@@ -1,0 +1,14 @@
+.google-sheets-data {
+  &--header{
+    margin-top: 20px;
+  }
+
+  &--charts {
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+}

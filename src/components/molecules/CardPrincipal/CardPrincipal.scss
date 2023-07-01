@@ -1,0 +1,10 @@
+.card-principal {
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+
+  &.zones {
+    margin-top: 20px;
+  }
+}
