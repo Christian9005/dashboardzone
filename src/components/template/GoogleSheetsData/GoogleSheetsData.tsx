@@ -36,12 +36,12 @@ const GoogleSheetsData = () => {
             const maxDate = data.reduce((max, row) => {
                 const rowDate = moment(row[0], 'DD/MM/YYYY');
 
-                if (rowDate.isBefore(moment(currentDate, 'DD/MM/YYYY'), 'day')) {
+                if (rowDate.isSameOrBefore(moment(currentDate, 'DD/MM/YYYY'), 'day')) {
                     if (max === '') {
                         return row[0];
                     } else {
                         const maxRowDate = moment(max, 'DD/MM/YYYY');
-                        if (rowDate.isAfter(maxRowDate, 'day')) {
+                        if (rowDate.isSameOrAfter(maxRowDate, 'day')) {
                             return row[0];
                         }
                     }
