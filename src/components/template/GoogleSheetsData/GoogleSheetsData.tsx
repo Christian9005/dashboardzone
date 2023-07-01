@@ -10,7 +10,7 @@ const GoogleSheetsData = () => {
     const [data, setData] = useState<string[][]>([]);
     const [totalCounts, setTotalCounts] = useState<{ [zone: string]: number }>({});
     const [maxHourData, setMaxHourData] = useState<{ [zone: string]: { hour: string, count: number } }>({});
-
+    const [date,setDate] = useState<string>();
 
     useEffect(() => {
         const getGoogleSheetsData = async () => {
@@ -51,6 +51,7 @@ const GoogleSheetsData = () => {
             }, '');
 
             console.log('Max Date:', maxDate);
+            setDate(maxDate);
 
             const filteredData = data.filter((row) => row[0] === maxDate);
 
@@ -104,6 +105,9 @@ const GoogleSheetsData = () => {
 
     return (
         <div className="google-sheets-data">
+            <div className="google-sheets-data--title">
+                <h1>Métricas del día {date}</h1>
+            </div>
             <div className="google-sheets-data--header">
                 <CardPrincipal
                     allData={allData}
